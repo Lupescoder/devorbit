@@ -36,7 +36,7 @@ function handleImageError() {
             style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center top;object-fit:contain"
         />
         <div
-            class="relative flex min-h-screen flex-col items-center justify-center selection:bg-[#FF2D20] selection:text-white"
+            class="relative flex min-h-screen flex-col items-center justify-center selection:bg-[#4169E1] selection:text-white"
         >
             <div class="relative w-full max-w-2xl px-6 lg:max-w-7xl">
                 <header
@@ -44,46 +44,28 @@ function handleImageError() {
                 >
                     <div class="flex lg:col-start-2 lg:justify-center">
                         <svg
-                            class="h-12 w-auto text-white lg:h-16 lg:text-[#FF2D20]"
+                            class="h-12 w-auto text-white lg:h-16 lg:text-[#4169E1]"
                             viewBox="0 0 24 24"
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                         <defs
                             id="defs874" />
-                        <sodipodi:namedview
-                            id="namedview872"
-                            pagecolor="#ffffff"
-                            bordercolor="#666666"
-                            borderopacity="1.0"
-                            inkscape:pageshadow="2"
-                            inkscape:pageopacity="0.0"
-                            inkscape:pagecheckerboard="0"
-                            showgrid="false"
-                            inkscape:zoom="0.64346717"
-                            inkscape:cx="224.56468"
-                            inkscape:cy="340.3437"
-                            inkscape:window-width="1896"
-                            inkscape:window-height="984"
-                            inkscape:window-x="10"
-                            inkscape:window-y="38"
-                            inkscape:window-maximized="1"
-                            inkscape:current-layer="svg870" />
                             <path
                             opacity="0.5"
                             d="M20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12Z"
                             fill="#1C274C"
                             id="path866"
-                            style="fill:#321519;fill-opacity:1;opacity:1" />
+                            style="fill:#151D39;fill-opacity:1;opacity:1" />
                             <path
                                 d="M17.7124 5.45331C18.7593 5.25995 19.7184 5.19444 20.5094 5.30066C21.2797 5.40411 22.0451 5.69443 22.4649 6.36546C22.9112 7.07875 22.7767 7.90702 22.4527 8.62306C22.1234 9.35067 21.5345 10.1218 20.7806 10.8912C19.2652 12.4379 16.9446 14.1173 14.1835 15.5883C11.4214 17.0599 8.68924 18.0721 6.49015 18.5079C5.39463 18.7249 4.39197 18.807 3.56745 18.709C2.76731 18.614 1.96779 18.3262 1.53503 17.6345C1.06423 16.882 1.23859 16.0043 1.60462 15.2551C1.97963 14.4875 2.63744 13.6693 3.47686 12.8522L4 12.4165C4 12.6349 4.08336 13.1257 4.16811 13.5624C4.21263 13.7918 4.25753 14.0062 4.29093 14.1584C3.6391 14.8237 3.19304 15.421 2.95236 15.9136C2.67513 16.481 2.74418 16.7391 2.80665 16.8389C2.87948 16.9553 3.1117 17.1443 3.74441 17.2195C4.35275 17.2918 5.18406 17.2375 6.1986 17.0365C8.21962 16.636 10.8118 15.685 13.4782 14.2644C16.1457 12.8433 18.3298 11.2493 19.7092 9.84143C20.4027 9.13359 20.8587 8.50726 21.0861 8.00467C21.3187 7.4905 21.2526 7.25586 21.1933 7.16105C21.1231 7.04882 20.9042 6.86715 20.3097 6.78731C19.7683 6.7146 19.0378 6.74602 18.1466 6.89948L16.8697 5.65597C17.2085 5.55454 17.5278 5.48526 17.7124 5.45331Z"
                                 fill="#1C274C"
                                 id="path868"
-                                style="fill:#ff0008;fill-opacity:1" />
+                                style="fill:#4169E1;fill-opacity:1" />
                             <g
                                 aria-label="&lt;                &gt;"
                                 transform="matrix(0.49224417,0.49224417,-1.0157561,1.0157561,0,0)"
                                 id="text5900"
-                                style="font-size:5.74598px;fill:#ff0008;stroke-width:0.0430949">
+                                style="font-size:5.74598px;fill:#4169E1;stroke-width:0.0430949">
                                 <path
                                 d="M 11.337465,1.3284776 8.5177826,0.10240673 V -0.57656158 L 11.337465,-1.7970212 v 0.79961149 l -1.9667635,0.75191532 1.9667635,0.77997187 z"
                                 style="-inkscape-font-specification:'Arial Bold'"
@@ -98,16 +80,16 @@ function handleImageError() {
                     <nav v-if="canLogin" class="-mx-3 flex flex-1 justify-end">
                         <Link
                             v-if="$page.props.auth.user"
-                            :href="route('dashboard')"
-                            class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
+                            :href="route('principal')"
+                            class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#4169E1] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
                         >
-                            Dashboard
+                            Principal
                         </Link>
 
                         <template v-else>
                             <Link
                                 :href="route('login')"
-                                class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
+                                class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#4169E1] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
                             >
                                 Log in
                             </Link>
@@ -115,7 +97,7 @@ function handleImageError() {
                             <Link
                                 v-if="canRegister"
                                 :href="route('register')"
-                                class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
+                                class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#4169E1] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
                             >
                                 Register
                             </Link>
@@ -128,7 +110,7 @@ function handleImageError() {
                         <a
                             href="https://www.gitbook.com/"
                             id="docs-card"
-                            class="flex flex-col items-start gap-6 overflow-hidden rounded-lg bg-white p-6 shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] ring-1 ring-white/[0.05] transition duration-300 hover:text-black/70 hover:ring-black/20 focus:outline-none focus-visible:ring-[#FF2D20] md:row-span-3 lg:p-10 lg:pb-10 dark:bg-zinc-900 dark:ring-zinc-800 dark:hover:text-white/70 dark:hover:ring-zinc-700 dark:focus-visible:ring-[#FF2D20]"
+                            class="flex flex-col items-start gap-6 overflow-hidden rounded-lg bg-white p-6 shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] ring-1 ring-white/[0.05] transition duration-300 hover:text-black/70 hover:ring-black/20 focus:outline-none focus-visible:ring-[#4169E1] md:row-span-3 lg:p-10 lg:pb-10 dark:bg-zinc-900 dark:ring-zinc-800 dark:hover:text-white/70 dark:hover:ring-zinc-700 dark:focus-visible:ring-[#4169E1]"
                         >
                             <div
                                 id="screenshot-container"
@@ -158,7 +140,7 @@ function handleImageError() {
                                     class="flex items-start gap-6 lg:flex-col"
                                 >
                                     <div
-                                        class="flex size-12 shrink-0 items-center justify-center rounded-full bg-[#FF2D20]/10 sm:size-16"
+                                        class="flex size-12 shrink-0 items-center justify-center rounded-full bg-[#4169E1]/10 sm:size-16"
                                     >
                                         <svg
                                             class="size-5 sm:size-6"
@@ -167,11 +149,11 @@ function handleImageError() {
                                             viewBox="0 0 24 24"
                                         >
                                             <path
-                                                fill="#FF2D20"
+                                                fill="#4169E1"
                                                 d="M23 4a1 1 0 0 0-1.447-.894L12.224 7.77a.5.5 0 0 1-.448 0L2.447 3.106A1 1 0 0 0 1 4v13.382a1.99 1.99 0 0 0 1.105 1.79l9.448 4.728c.14.065.293.1.447.1.154-.005.306-.04.447-.105l9.453-4.724a1.99 1.99 0 0 0 1.1-1.789V4ZM3 6.023a.25.25 0 0 1 .362-.223l7.5 3.75a.251.251 0 0 1 .138.223v11.2a.25.25 0 0 1-.362.224l-7.5-3.75a.25.25 0 0 1-.138-.22V6.023Zm18 11.2a.25.25 0 0 1-.138.224l-7.5 3.75a.249.249 0 0 1-.329-.099.249.249 0 0 1-.033-.12V9.772a.251.251 0 0 1 .138-.224l7.5-3.75a.25.25 0 0 1 .362.224v11.2Z"
                                             />
                                             <path
-                                                fill="#FF2D20"
+                                                fill="#4169E1"
                                                 d="m3.55 1.893 8 4.048a1.008 1.008 0 0 0 .9 0l8-4.048a1 1 0 0 0-.9-1.785l-7.322 3.706a.506.506 0 0 1-.452 0L4.454.108a1 1 0 0 0-.9 1.785H3.55Z"
                                             />
                                         </svg>
@@ -191,7 +173,7 @@ function handleImageError() {
                                 </div>
 
                                 <svg
-                                    class="size-6 shrink-0 stroke-[#FF2D20]"
+                                    class="size-6 shrink-0 stroke-[#4169E1]"
                                     xmlns="http://www.w3.org/2000/svg"
                                     fill="none"
                                     viewBox="0 0 24 24"
@@ -208,10 +190,10 @@ function handleImageError() {
 
                         <a
                             href="#"
-                            class="flex items-start gap-4 rounded-lg bg-white p-6 shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] ring-1 ring-white/[0.05] transition duration-300 hover:text-black/70 hover:ring-black/20 focus:outline-none focus-visible:ring-[#FF2D20] lg:pb-10 dark:bg-zinc-900 dark:ring-zinc-800 dark:hover:text-white/70 dark:hover:ring-zinc-700 dark:focus-visible:ring-[#FF2D20]"
+                            class="flex items-start gap-4 rounded-lg bg-white p-6 shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] ring-1 ring-white/[0.05] transition duration-300 hover:text-black/70 hover:ring-black/20 focus:outline-none focus-visible:ring-[#4169E1] lg:pb-10 dark:bg-zinc-900 dark:ring-zinc-800 dark:hover:text-white/70 dark:hover:ring-zinc-700 dark:focus-visible:ring-[#4169E1]"
                         >
                             <div
-                                class="flex size-12 shrink-0 items-center justify-center rounded-full bg-[#FF2D20]/10 sm:size-16"
+                                class="flex size-12 shrink-0 items-center justify-center rounded-full bg-[#4169E1]/10 sm:size-16"
                             >
                                 <svg
                                     class="size-5 sm:size-6"
@@ -219,7 +201,7 @@ function handleImageError() {
                                     fill="none"
                                     viewBox="0 0 24 24"
                                 >
-                                    <g fill="#FF2D20">
+                                    <g fill="#4169E1">
                                         <path
                                             d="M24 8.25a.5.5 0 0 0-.5-.5H.5a.5.5 0 0 0-.5.5v12a2.5 2.5 0 0 0 2.5 2.5h19a2.5 2.5 0 0 0 2.5-2.5v-12Zm-7.765 5.868a1.221 1.221 0 0 1 0 2.264l-6.626 2.776A1.153 1.153 0 0 1 8 18.123v-5.746a1.151 1.151 0 0 1 1.609-1.035l6.626 2.776ZM19.564 1.677a.25.25 0 0 0-.177-.427H15.6a.106.106 0 0 0-.072.03l-4.54 4.543a.25.25 0 0 0 .177.427h3.783c.027 0 .054-.01.073-.03l4.543-4.543ZM22.071 1.318a.047.047 0 0 0-.045.013l-4.492 4.492a.249.249 0 0 0 .038.385.25.25 0 0 0 .14.042h5.784a.5.5 0 0 0 .5-.5v-2a2.5 2.5 0 0 0-1.925-2.432ZM13.014 1.677a.25.25 0 0 0-.178-.427H9.101a.106.106 0 0 0-.073.03l-4.54 4.543a.25.25 0 0 0 .177.427H8.4a.106.106 0 0 0 .073-.03l4.54-4.543ZM6.513 1.677a.25.25 0 0 0-.177-.427H2.5A2.5 2.5 0 0 0 0 3.75v2a.5.5 0 0 0 .5.5h1.4a.106.106 0 0 0 .073-.03l4.54-4.543Z"
                                         />
@@ -240,7 +222,7 @@ function handleImageError() {
                             </div>
 
                             <svg
-                                class="size-6 shrink-0 self-center stroke-[#FF2D20]"
+                                class="size-6 shrink-0 self-center stroke-[#4169E1]"
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
                                 viewBox="0 0 24 24"
@@ -256,11 +238,11 @@ function handleImageError() {
 
                         <a
                             href="https://github.com/peterspbr/devorbit"
-                            class="flex items-start gap-4 rounded-lg bg-white p-6 shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] ring-1 ring-white/[0.05] transition duration-300 hover:text-black/70 hover:ring-black/20 focus:outline-none focus-visible:ring-[#FF2D20] lg:pb-10 dark:bg-zinc-900 dark:ring-zinc-800 dark:hover:text-white/70 dark:hover:ring-zinc-700 dark:focus-visible:ring-[#FF2D20]"
+                            class="flex items-start gap-4 rounded-lg bg-white p-6 shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] ring-1 ring-white/[0.05] transition duration-300 hover:text-black/70 hover:ring-black/20 focus:outline-none focus-visible:ring-[#4169E1] lg:pb-10 dark:bg-zinc-900 dark:ring-zinc-800 dark:hover:text-white/70 dark:hover:ring-zinc-700 dark:focus-visible:ring-[#4169E1]"
                             target="_blank"
                         >
                             <div
-                                class="flex size-12 shrink-0 items-center justify-center rounded-full bg-[#FF2D20]/10 sm:size-16"
+                                class="flex size-12 shrink-0 items-center justify-center rounded-full bg-[#4169E1]/10 sm:size-16"
                             >
                                 <svg
                                     class="size-5 sm:size-6"
@@ -268,7 +250,7 @@ function handleImageError() {
                                     fill="none"
                                     viewBox="0 0 24 24"
                                 >
-                                    <g fill="#FF2D20">
+                                    <g fill="#4169E1">
                                         <path
                                             d="M8.75 4.5H5.5c-.69 0-1.25.56-1.25 1.25v4.75c0 .69.56 1.25 1.25 1.25h3.25c.69 0 1.25-.56 1.25-1.25V5.75c0-.69-.56-1.25-1.25-1.25Z"
                                         />
@@ -295,7 +277,7 @@ function handleImageError() {
                             </div>
 
                             <svg
-                                class="size-6 shrink-0 self-center stroke-[#FF2D20]"
+                                class="size-6 shrink-0 self-center stroke-[#4169E1]"
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
                                 viewBox="0 0 24 24"
@@ -311,10 +293,10 @@ function handleImageError() {
 
                         <a
                             href="https://novoportal.cruzeirodosul.edu.br/?empresa=udf&blackboard=false"
-                            class="flex items-start gap-4 rounded-lg bg-white p-6 shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] ring-1 ring-white/[0.05] transition duration-300 hover:text-black/70 hover:ring-black/20 focus:outline-none focus-visible:ring-[#FF2D20] lg:pb-10 dark:bg-zinc-900 dark:ring-zinc-800 dark:hover:text-white/70 dark:hover:ring-zinc-700 dark:focus-visible:ring-[#FF2D20]"
+                            class="flex items-start gap-4 rounded-lg bg-white p-6 shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] ring-1 ring-white/[0.05] transition duration-300 hover:text-black/70 hover:ring-black/20 focus:outline-none focus-visible:ring-[#4169E1] lg:pb-10 dark:bg-zinc-900 dark:ring-zinc-800 dark:hover:text-white/70 dark:hover:ring-zinc-700 dark:focus-visible:ring-[#4169E1]"
                         >
                             <div
-                                class="flex size-12 shrink-0 items-center justify-center rounded-full bg-[#FF2D20]/10 sm:size-16"
+                                class="flex size-12 shrink-0 items-center justify-center rounded-full bg-[#4169E1]/10 sm:size-16"
                             >
                                 <svg
                                     class="size-5 sm:size-6"
@@ -322,7 +304,7 @@ function handleImageError() {
                                     fill="none"
                                     viewBox="0 0 24 24"
                                 >
-                                    <g fill="#FF2D20">
+                                    <g fill="#4169E1">
                                         <path
                                             d="M8.75 4.5H5.5c-.69 0-1.25.56-1.25 1.25v4.75c0 .69.56 1.25 1.25 1.25h3.25c.69 0 1.25-.56 1.25-1.25V5.75c0-.69-.56-1.25-1.25-1.25Z"
                                         />
@@ -349,7 +331,7 @@ function handleImageError() {
                             </div>
 
                             <svg
-                                class="size-6 shrink-0 self-center stroke-[#FF2D20]"
+                                class="size-6 shrink-0 self-center stroke-[#4169E1]"
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
                                 viewBox="0 0 24 24"
@@ -364,10 +346,10 @@ function handleImageError() {
                         </a>
                     </div>
 
-                    <hr class="my-5" style="border-top: 2px solid #ff0008;">
+                    <hr class="my-5" style="border-top: 2px solid #4169E1;">
 
                     <h1 style="font-size: 32px; color: white;"><strong>O que é o DevOrbit?</strong></h1>
-                    <p>O <strong style="color: #ff0008">DevOrbit</strong> é uma plataforma convergente, integrando funcionalidades de blog e fórum em um ecossistema auto-sustentável, projetado para promover a inteligência coletiva dentro da instituição. Operando sob um modelo de governança colaborativa, os discentes desempenham um papel central na curadoria do conteúdo, garantindo a acurácia e relevância das informações por meio de um sistema de votação meritocrático. A estrutura do <strong style="color: #ff0008">DevOrbit</strong> permite a iteração contínua dos posts, onde os alunos, além de poderem endossar os conteúdos mais valiosos, também são habilitados a realizar contribuições e modificações, garantindo um fluxo orgânico de conhecimento em múltiplas frentes temáticas.</p>
+                    <p>O <strong style="color: #4169E1">DevOrbit</strong> é uma plataforma convergente, integrando funcionalidades de blog e fórum em um ecossistema auto-sustentável, projetado para promover a inteligência coletiva dentro da instituição. Operando sob um modelo de governança colaborativa, os discentes desempenham um papel central na curadoria do conteúdo, garantindo a acurácia e relevância das informações por meio de um sistema de votação meritocrático. A estrutura do <strong style="color: #4169E1">DevOrbit</strong> permite a iteração contínua dos posts, onde os alunos, além de poderem endossar os conteúdos mais valiosos, também são habilitados a realizar contribuições e modificações, garantindo um fluxo orgânico de conhecimento em múltiplas frentes temáticas.</p>
 
                     <h1 style="font-size: 32px; color: white;" class="mt-5"><strong>Como começar?</strong></h1>
                     <p>Para iniciar sua imersão no DevOrbit, é necessário realizar o processo de cadastramento, fornecendo um nome e RGM devidamente válidos. Apenas após essa autenticação inicial será possível desbloquear o acesso à plataforma, assegurando a integridade do sistema e garantindo uma experiência exclusiva e personalizada.</p>
