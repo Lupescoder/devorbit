@@ -15,9 +15,9 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->text('description');
-            $table->integer('relevance');
-            $table->string('category');
-            $table->string('author');
+            // $table->integer('relevance');
+            // $table->string('category');
+            // $table->string('author');
             $table->timestamps();
         });
     }
