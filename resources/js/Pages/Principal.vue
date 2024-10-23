@@ -215,7 +215,7 @@ const props = defineProps({
         Página principal - DevOrbit
       </h2>
       <button @click="openModal"
-        class="bg-blue-600 hover:bg-blue-500 text-white px-4 py-2 rounded transition duration-200">
+        class="bg-blue-600 hover:bg-blue-500 text-white px-4 py-2 my-5 rounded transition duration-200">
         Criar Post
       </button>
     </template>
